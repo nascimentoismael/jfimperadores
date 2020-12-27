@@ -17,13 +17,14 @@ body {
 
 body {
     margin: 0;
-    padding-top: 7.75rem;
+    padding-top: 5rem;
 }
 
 ul {
     display: flex;
     list-style: none;
     padding-left: 0;
+    align-items: center;
 }
 
 .navbar {
@@ -34,11 +35,60 @@ ul {
     
     width: 100vw;
     padding: 0 1rem;
-    height: 7.75rem;
+    height: 8rem;
     
     background-color: black;
 }
 
 .navbar img {
-    size: 1rem;
+    position: relative;
+    left: 0.9375rem;
+    width: 7rem;
+    z-index: 4;
+    float: left;
+    padding-top: 1rem;
+}
+
+.navbar__links {
+    justify-self: end;
+    padding-top: 2rem;
+    float: right;
+}
+
+.navbar__links li {
+    font-size: 1rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+}
+
+.navbar__links a {
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
+
+.hero img {
+    width: 90rem;
+}
+
+.hero_title {
+    text-align: center;
+    font-size: 2.375rem;
+    font-weight: 700;
+    line-height: 1ch;
+}
+
+.hero_subtitle {
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+.content {
+    text-align: justify;
+    padding-left: 5rem;
 }
