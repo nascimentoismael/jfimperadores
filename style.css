@@ -5,19 +5,16 @@
 }
 
 :root {
-    --color-primary: #F5DE31;
     font-family: 'Jura', sans-serif;
     font-size: 16px;
     color: #fff;
-}
-
-body {
-    background-color: #323232;
+    --color-primary: #7b4c1e;
 }
 
 body {
     margin: 0;
-    padding-top: 5rem;
+    padding-top: 8rem;
+    background-color: #333333;
 }
 
 ul {
@@ -68,22 +65,32 @@ ul {
 }
 
 .navbar__links a:hover {
-    color: var(--color-primary);
+    color: #F5DE31;
 }
 
 .hero img {
-    width: 90rem;
+    position: relative;
+    width: 100vw;
+    opacity: 0.2;
 }
 
 .hero_title {
-    text-align: center;
+    position: absolute;
+    object-position: center;
+    top: 12rem;
+    padding-left: 7rem;
+    color: var(--color-primary);
     font-size: 2.375rem;
     font-weight: 700;
     line-height: 1ch;
 }
 
 .hero_subtitle {
-    text-align: center;
+    position: absolute;
+    object-position: center;
+    top: 16rem;
+    padding-left: 15rem;
+    color: var(--color-primary);
     font-size: .875rem;
     font-weight: 300;
 }
